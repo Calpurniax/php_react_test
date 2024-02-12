@@ -7,10 +7,21 @@ import second from './assets/images/2.jpg';
 import third from './assets/images/3.jpg';
 
 export default function App() {
-  let slides =[
-   first,
-   second,
-   third
+  let slides =[{
+    name:first,
+    text:'first text',
+    id:1
+  },
+  {
+    name: second,
+    text:'second text',
+    id:2
+  },
+  {
+    name: third,
+    text:'third text',
+    id:3
+  }  
   ];
   return (
     <>
