@@ -19,16 +19,11 @@ export default function Carousel({ slides }) {
         <div className="overflow-hidden relative">
             <div className="flex transition ease-out duration-40"
                 style={{ transform: `translateX(-${current * 100}%)` }}>
-                {slides.map((image, i) => {                    
+                {slides.map((image, i) => {
                     return (
                         <>
-                            <img src={image.name}/>
-                            <div className={`absolute inset-x-[${i*100} * 15%] bottom-5 hidden py-5 text-center text-black md:block z-10`}>
-                                <p >{image.text}</p>
-                            </div>
-                            
+                            <img src={image} />
                         </>
-                   
                     )
                 })}
             </div>
